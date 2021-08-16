@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+}
+body {
+    background-color: rgba(248, 248, 248, 0.933);
+}
+main {
+  background-color: #fff;
+  width: 80%;
+  min-height: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 18px #bdbdbd;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+main > .img_header{
+  background-image: url("../img/header.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main > .input_body{
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  height: 60px;
+  margin-top: -30px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 18px #bdbdbd;
+}
+main > .input_body > input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size:24px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 15px;
+}
+main > .input_body > button{
+  margin-left: -30px;
+  width: 100px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size:18px;
+  background-color: rgb(14, 119, 31);
+  color: #fff;
+  transition: .41s;
+}
+main > .input_body > button:hover{
+  transform: scale(1.05);
+}
