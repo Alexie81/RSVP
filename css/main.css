@@ -6,7 +6,7 @@ body {
 }
 main {
   background-color: #fff;
-  width: 80%;
+  width: 70%;
   min-height: 600px;
   border-radius: 10px;
   box-shadow: 5px 5px 18px #bdbdbd;
@@ -16,6 +16,9 @@ main {
 }
 main > .img_header{
   background-image: url("../img/header.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 400px;
   background-repeat: no-repeat;
   border-top-left-radius: 10px;
@@ -59,4 +62,25 @@ main > .input_body > button{
 }
 main > .input_body > button:hover{
   transform: scale(1.05);
+}
+main > .container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+main > .container > .header_main{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+main > .container > .header_main > h1{
+  font-weight: 500 !important;
+  font-size: 45px;
+}
+main > .container > .header_main > .checkbox{
+  margin-left: auto;
+  cursor: pointer;
+}
+main > .container > .header_main > .checkbox >*{
+  cursor: pointer;
 }
