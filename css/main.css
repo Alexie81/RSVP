@@ -13,9 +13,10 @@ main {
   margin-right: auto;
   margin-left: auto;
   margin-top: 60px;
+  padding-bottom: 20px;
 }
 main > .img_header{
-  background-image: url("../img/header.jpeg");
+  background: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4) ), url("../img/header.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,6 +24,9 @@ main > .img_header{
   background-repeat: no-repeat;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main > .input_body{
   width: 500px;
@@ -66,6 +70,7 @@ main > .input_body > button:hover{
 main > .container {
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 50px;
 }
 main > .container > .header_main{
   height: 55px;
@@ -76,6 +81,7 @@ main > .container > .header_main{
 main > .container > .header_main > h1{
   font-weight: 500 !important;
   font-size: 45px;
+  text-decoration: underline dotted;
 }
 main > .container > .header_main > .checkbox{
   margin-left: auto;
@@ -83,4 +89,51 @@ main > .container > .header_main > .checkbox{
 }
 main > .container > .header_main > .checkbox >*{
   cursor: pointer;
+}
+main > .container > .body_main {
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  align-items: start;
+}
+main > .container > .body_main > .card {
+  width: 250px;
+  height: 200px;
+  border: 1px solid rgb(19, 163, 182);
+  box-shadow: 5px 5px 18px #bdbdbd;
+  padding:10px;
+  padding-top: 40px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+main > .container > .body_main > .card > input[type="text"] {
+  width: 200px;
+  border: 1px solid #000;
+  height: 30px;
+  outline: none;
+  border-radius:4px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+main > .container > .body_main > .card > input[type="checkbox"] {
+  outline: none;
+  border-radius:4px;
+  margin-bottom: 10px;
+}
+main > .container > .body_main > .card > button {
+  width: 98px;
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+  border-radius:4px;
+  cursor: pointer;
+}
+main > .container > .body_main > .card > .btn_edit {
+  background-color: rgb(0, 147, 184) !important;
+  color: #fff !important;
+}
+main > .container > .body_main > .card > .btn_remove {
+  background-color: rgb(167, 53, 33) !important;
+  color: #fff !important;
 }
